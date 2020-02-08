@@ -79,8 +79,11 @@ docker run --rm -it --name spark-worker --hostname spark-worker \
 ### Start another container to use as the "driver"
 _No need to submit extra parameters since they're specificed in the `spark-submit` code_
 ```sh
-docker run --rm -it --network spark_network \
-    emragins/spark:latest /bin/sh
+docker run --rm -it --network spark_network emragins/spark:latest /bin/sh
+```
+
+```sh
+docker run --rm -it --network apache-spark-learning_spark-network emragins/spark:latest /bin/sh
 ```
 
 ### Test with 
