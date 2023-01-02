@@ -1,3 +1,4 @@
+#sbt compile 
 
 # re-build docker with latest *.jar file
 #docker build -t emragins/spark-submit:latest -f .\submit.Dockerfile .
